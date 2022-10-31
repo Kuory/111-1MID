@@ -17,15 +17,17 @@
                 <asp:RadioButton ID="rb_Id" runat="server" GroupName="rb_Type" Checked="True" Text="身分證字號" />
                 <asp:RadioButton ID="rb_Hid" runat="server" GroupName="rb_Type" Text="病歷號" />
                 <asp:TextBox ID="tb_Account" runat="server" Height="20px" Width=" 400px" OnTextChanged="tb_Account_TextChanged"></asp:TextBox>
-                </br>
+                <br>
+</br>
                 連絡電話:(選填)
                 <asp:TextBox ID="tb_Phone" runat="server" Height="20px" Width="300px"></asp:TextBox>
-                <asp:Button ID="btn_Submit" runat="server" OnClick="btn_Submit_Click" Text="掛號" Visible="False" Width="80px" />
-                </br>
+                <asp:Button ID="btn_Submit" runat="server" OnClick="btn_Submit_Click" Text="掛號" Width="80px" />
+                <br>
+</br>
             </asp:Panel>
             <asp:Panel ID="pl_Msg" runat="server" Width="500px" BorderWidth="1px" Visible="False">
                 <asp:Label ID="Ib_Msg" runat="server" Text=""></asp:Label>
-                <asp:LinkButton ID="LinkButton1" runat="server" Text="重新填寫"></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" Text="重新填寫" OnClick="LinkButton1_Click" PostBackUrl="~/Q1.aspx"></asp:LinkButton>
             </asp:Panel>
         </div>
     </form>
