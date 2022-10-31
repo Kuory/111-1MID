@@ -12,5 +12,41 @@ namespace _111_1MID {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+
+        protected void tb_Account_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_Account.Text == "")
+            {
+                btn_Submit.Visible = false;
+            }
+            else
+            {
+                btn_Submit.Visible = true;
+            }
+
+            for (int i = 0; i < s_IdSet.Length; i++)
+            {
+                if (tb_Account.Text == s_IdSet[i])
+                {
+                    Ib_Type.Text = "複診";
+                    break;
+                }
+                else
+                {
+                    Ib_Type.Text = "初診";
+                }
+
+            }
+        }
+
+        protected void btn_Submit_Click(object sender, EventArgs e)
+        {
+            pl_Msg.Visible = true;
+            Ib_Msg.Text = (Ib_Type.Text + "<br/>" + tb_Account.Text + "先生/小姐，已完成掛號。" + "<br/>");
+            if (tb_Phone.Text != "")
+            {
+                Ib_Msg.Text += ("已寄送至信箱" + tb_Phone.Text + "<br/>");
+            }
+        }
     }
 }
