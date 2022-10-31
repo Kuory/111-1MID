@@ -22,7 +22,7 @@
                 連絡電話:(選填)
                 <asp:TextBox ID="tb_Phone" runat="server" Height="20px" Width="300px"></asp:TextBox>
                 <asp:Button ID="btn_Submit" runat="server" OnClick="btn_Submit_Click" Text="掛號" Width="80px" />
-                <br>
+
 </br>
             </asp:Panel>
             <asp:Panel ID="pl_Msg" runat="server" Width="500px" BorderWidth="1px" Visible="False">
