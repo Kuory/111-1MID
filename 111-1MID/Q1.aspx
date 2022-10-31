@@ -14,9 +14,21 @@
             <h2>||掛號資訊</h2>
             <asp:Panel ID="P1_Info" runat="server" Width="500px" BorderWidth="1px">
                 <h3><asp:Label ID="Ib_Type" runat="server" Text="初診"></asp:Label></h3>
-                <asp:RadioButton ID="rb_Id" runat="server" GroupName="rb_Type"Font-Overline="False" Checked="True" Text="身分證字號" />
+                <asp:RadioButton ID="rb_Id" runat="server" GroupName="rb_Type" Checked="True" Text="身分證字號" />
                 <asp:RadioButton ID="rb_Hid" runat="server" GroupName="rb_Type" Text="病歷號" />
-                <asp:TextBox ID="tb_Account" runat="server" Width=" 400px" Height="20px"></asp:TextBox>
+                <br>
+                <br></br>
+                <asp:TextBox ID="tb_Account" runat="server" Height="20px" Width=" 400px"></asp:TextBox>
+                <br>
+                <br></br>
+                連絡電話:(選填)
+                <asp:TextBox ID="tb_Phone" runat="server" Height="20px" Width="300px"></asp:TextBox>
+                <asp:Button ID="btn_Submit" runat="server" Text="掛號" Visible="False" Width="80px" />
+                </br>
+                <asp:Panel ID="pl_Msg" runat="server" Width="500px" BorderWidth="1px" Visible="False">
+                <asp:Label ID=Ib_Msg" runat="server" Text=""></asp:Label>
+                <asp:HyperLink ID="HyperLink1" runat="server" Text="重新填寫"></asp:HyperLink>
+                </asp:Panel>
             </asp:Panel>
         </div>
     </form>
