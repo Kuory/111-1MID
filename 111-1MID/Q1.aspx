@@ -14,7 +14,9 @@
             <h2>||掛號資訊</h2>
             <asp:Panel ID="P1_Info" runat="server" Width="500px" BorderWidth="1px">
                 <h3><asp:Label ID="Ib_Type" runat="server" Text="初診"></asp:Label></h3>
-                <asp:RadioButton ID="rb_Id" runat="server"  GroupName="rb_Type"Font-Overline="False" Checked="True" />
+                <asp:RadioButton ID="rb_Id" runat="server" GroupName="rb_Type"Font-Overline="False" Checked="True" Text="身分證字號" />
+                <asp:RadioButton ID="rb_Hid" runat="server" GroupName="rb_Type" Text="病歷號" />
+                <asp:TextBox ID="tb_Account" runat="server" Width=" 400px" Height="20px"></asp:TextBox>
             </asp:Panel>
         </div>
     </form>
