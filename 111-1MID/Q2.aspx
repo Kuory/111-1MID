@@ -10,6 +10,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>保單電訪記錄</h1>
+            紀錄編碼:
+            <asp:TextBox ID="tb_Num" runat="server"></asp:TextBox>
+            <br/>
+            聯絡方式:
+            <asp:RadioButtonList ID="rbl_Phone" runat="server" RepeatDirection="Horizontal">
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+            </asp:RadioButtonList>
+
         </div>
     </form>
 </body>

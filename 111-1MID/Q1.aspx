@@ -17,11 +17,11 @@
                 <asp:RadioButton ID="rb_Id" runat="server" GroupName="rb_Type" Checked="True" Text="身分證字號" />
                 <asp:RadioButton ID="rb_Hid" runat="server" GroupName="rb_Type" Text="病歷號" />
                 <asp:TextBox ID="tb_Account" runat="server" Height="20px" Width=" 400px" OnTextChanged="tb_Account_TextChanged"></asp:TextBox>
-<br></br>
+<br/>
                 連絡電話:(選填)
                 <asp:TextBox ID="tb_Phone" runat="server" Height="20px" Width="300px"></asp:TextBox>
                 <asp:Button ID="btn_Submit" runat="server" OnClick="btn_Submit_Click" Text="掛號" Width="80px" />
-<br></br>
+<br/>
             </asp:Panel>
             <asp:Panel ID="pl_Msg" runat="server" Width="500px" BorderWidth="1px" Visible="False">
                 <asp:Label ID="Ib_Msg" runat="server" Text=""></asp:Label>
