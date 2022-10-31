@@ -24,15 +24,6 @@ namespace _111_1MID
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// P1_Info 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel P1_Info;
-
-        /// <summary>
         /// Ib_Type 控制項。
         /// </summary>
         /// <remarks>
@@ -96,12 +87,21 @@ namespace _111_1MID
         protected global::System.Web.UI.WebControls.Panel pl_Msg;
 
         /// <summary>
-        /// HyperLink1 控制項。
+        /// Ib_Msg 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.Label Ib_Msg;
+
+        /// <summary>
+        /// LinkButton1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
     }
 }

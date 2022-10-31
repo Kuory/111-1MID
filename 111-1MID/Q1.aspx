@@ -12,23 +12,20 @@
         <div>
             <h1>線上掛號系統</h1>
             <h2>||掛號資訊</h2>
-            <asp:Panel ID="P1_Info" runat="server" Width="500px" BorderWidth="1px">
+            
                 <h3><asp:Label ID="Ib_Type" runat="server" Text="初診"></asp:Label></h3>
                 <asp:RadioButton ID="rb_Id" runat="server" GroupName="rb_Type" Checked="True" Text="身分證字號" />
                 <asp:RadioButton ID="rb_Hid" runat="server" GroupName="rb_Type" Text="病歷號" />
-                <br>
-                <br></br>
                 <asp:TextBox ID="tb_Account" runat="server" Height="20px" Width=" 400px"></asp:TextBox>
-                <br>
-                <br></br>
+                </br> 
                 連絡電話:(選填)
-                <asp:TextBox ID="tb_Phone" runat="server" Height="20px" Width="300px"></asp:TextBox>
-                <asp:Button ID="btn_Submit" runat="server" Text="掛號" Visible="False" Width="80px" />
+                <asp:TextBox ID="tb_Phone" runat="server" Height="20px" Width="300px"></asp:TextBox></br>
+                <asp:Button ID="btn_Submit" runat="server" Text="掛號" Visible="False" Width="80px"></asp:Button>
+            </asp:Panel>
                 </br>
-                <asp:Panel ID="pl_Msg" runat="server" Width="500px" BorderWidth="1px" Visible="False">
-                <asp:Label ID=Ib_Msg" runat="server" Text=""></asp:Label>
-                <asp:HyperLink ID="HyperLink1" runat="server" Text="重新填寫"></asp:HyperLink>
-                </asp:Panel>
+            <asp:Panel ID="pl_Msg" runat="server" Width="500px" BorderWidth="1px" Visible="False">
+                <asp:Label ID="Ib_Msg" runat="server" Text=""></asp:Label>
+                <asp:LinkButton ID="LinkButton1" runat="server" Text="重新填寫"></asp:LinkButton>
             </asp:Panel>
         </div>
     </form>
